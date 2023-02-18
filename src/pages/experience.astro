@@ -1,0 +1,28 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+import Experience from "../components/Experience.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, workHistoryInfo } from "../config";
+---
+
+<style is:global>
+	html {
+		background-color: #000000;
+	}
+</style>
+<html lang='en'>
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Here is a list of my experiences 👋</h1>
+			<Experience title='Experience' details={workHistoryInfo.experience} />
+			<Experience title='Education' details={workHistoryInfo.education} />
+		</main>
+		<Footer />
+	</body>
+</html>

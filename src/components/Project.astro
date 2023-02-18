@@ -1,0 +1,18 @@
+---
+import { projectList } from '../types/index';
+const { title, details } = Astro.props as projectList;
+---
+
+<section class='project-page'>
+	<h2 class='header-project-page'>{title}</h2>
+	<div>
+		{
+			details.map(item => (
+				<div class='project-item'>
+					<h3 class='project-content'>{item.name}</h3>
+					<p class='project-details'> {item.description}</p>
+				</div>
+			))
+		}
+	</div>
+</section>

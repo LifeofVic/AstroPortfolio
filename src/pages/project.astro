@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, builds } from '../config';
+import Project from '../components/Project.astro';
+---
+
+<!DOCTYPE html>
+<style is:global>
+	html {
+		background-color: #17284d;
+	}
+</style>
+<html lang='en'>
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<Project title='Projects' details={builds.projects} />
+			</section>
+			<Footer />
+		</main>
+	</body>
+</html>

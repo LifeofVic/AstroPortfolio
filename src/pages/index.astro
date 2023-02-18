@@ -1,0 +1,36 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Experience from "../components/Experience.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, workHistoryInfo } from "../config";
+
+import Project from "../components/Project.astro";
+import { builds } from "../config";
+
+import { Image, Picture } from "@astrojs/image/components";
+---
+
+<style is:global>
+	html {
+		background-color: #000000;
+	}
+</style>
+<html lang='en'>
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<p>
+				Browse through my recent projects that I have built, work experience and
+				skills sets that I have obtained throughout my journey.
+			</p>
+			<section>
+				<Project title='Projects' details={builds.projects} />
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
