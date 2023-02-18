@@ -8,14 +8,11 @@ import { SITE_TITLE, SITE_DESCRIPTION, workHistoryInfo } from "../config";
 import Project from "../components/Project.astro";
 import { builds } from "../config";
 
+import MainLayout from "../layouts/MainLayout.astro";
+
 import { Image, Picture } from "@astrojs/image/components";
 ---
 
-<style is:global>
-	html {
-		background-color: #000000;
-	}
-</style>
 <html lang='en'>
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
@@ -23,13 +20,17 @@ import { Image, Picture } from "@astrojs/image/components";
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<p>
-				Browse through my recent projects that I have built, work experience and
-				skills sets that I have obtained throughout my journey.
-			</p>
-			<section>
+			<p>Welcome to my Portfolio Page!</p>
+			<div>
 				<Project title='Projects' details={builds.projects} />
-			</section>
+			</div>
+			<div>
+				<h2>Experince section to be clicked on</h2>
+			</div>
+
+			<div>
+				<h2>Work history</h2>
+			</div>
 		</main>
 		<Footer />
 	</body>
