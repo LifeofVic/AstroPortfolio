@@ -2,7 +2,7 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = 'Victor Llapa | Portfolio';
-export const SITE_DESCRIPTION = 'Welcome to my website!';
+export const SITE_DESCRIPTION = 'Welcome to my Website!';
 
 
 export const bio = {
@@ -67,8 +67,8 @@ export const builds = {
 projects: [
 {
 name: "Gym Ready",
-description:"A mobile first app that allows users to browse through exercises saved on the database, by filtering through muscle groups which then is filtered through muscle targeted. Gym Ready brings confidence to users by displaying the correct way each exercise is executed with animations. Gym Ready is made possible by utilizing Javascript, React, React Saga, Express.js, Node.js, Passport, HTML, PostgreSQL, HTML, CSS and Material UI.", 
-image: ' '
+description:"A mobile first app that allows users to browse through exercises saved on the database, by filtering through muscle groups which then is filtered through muscle targeted. Gym Ready brings confidence to users by displaying the correct way each exercise is executed with animations. Gym Ready is made possible by utilizing Javascript, React, React Saga, Express.js, Node.js, Passport, HTML, PostgreSQL, HTML, CSS and Material UI.",
+image: ['public/GymReadyImages/Screenshot 2023-02-19 at 12.20.43 AM.png','public/GymReadyImages/Screenshot 2023-02-19 at 12.19.49 AM.png', 'public/GymReadyImages/Screenshot 2023-02-19 at 12.20.13 AM.png', 'public/GymReadyImages/Screenshot 2023-02-19 at 12.20.43 AM.png' ]
 },
 {
 name: 'Plug-N-Play',

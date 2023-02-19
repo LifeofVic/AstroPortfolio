@@ -11,6 +11,8 @@ import { builds } from "../config";
 import MainLayout from "../layouts/MainLayout.astro";
 
 import { Image, Picture } from "@astrojs/image/components";
+
+import "../styles/global.css";
 ---
 
 <html lang='en'>
@@ -22,7 +24,9 @@ import { Image, Picture } from "@astrojs/image/components";
 		<main>
 			<p>Welcome to my Portfolio Page!</p>
 			<div>
-				<Project title='Projects' details={builds.projects} />
+				<Project title='Projects' details={builds.projects}>
+					<Ima />
+				</Project>
 			</div>
 			<div>
 				<h2>Experince section to be clicked on</h2>

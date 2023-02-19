@@ -1,6 +1,8 @@
 ---
-import { projectList } from '../types/index';
+import { projectList } from "../types/index";
 const { title, details } = Astro.props as projectList;
+
+import "../styles/global.css";
 ---
 
 <section class='project-page'>
@@ -8,9 +10,10 @@ const { title, details } = Astro.props as projectList;
 	<div>
 		{
 			details.map(item => (
-				<div class='project-item'>
-					<h3 class='project-content'>{item.name}</h3>
-					<p class='project-details'> {item.description}</p>
+				<div class='max-w-auto '>
+					<h1 class='text-xl'>{item.name}</h1>
+					<p class='font-medium'> {item.description}</p>
+					<slot />
 				</div>
 			))
 		}
