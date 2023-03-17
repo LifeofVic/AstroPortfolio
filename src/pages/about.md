@@ -1,8 +1,7 @@
 ---
-layout: '../layouts/BlogPost.astro'
-title: 'About Me'
-description: 'About Me'
-updatedDate: 'January 21 2023'
+title: "About Me"
+description: "About Me"
+updatedDate: "January 21 2023"
 ---
 
 <style is:global>
