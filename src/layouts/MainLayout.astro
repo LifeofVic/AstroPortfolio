@@ -10,7 +10,7 @@ const { title, description } = Astro.props;
 	<head>
 		<meta charset='utf-8' />
 		<meta name='viewport' content='width=device-width, initial-scale=1' />
-		<BaseHead title={title} description={description} />
+		<!-- <BaseHead title={title} description={description} /> -->
 		<Nav />
 	</head>
 	<body>
@@ -21,5 +21,20 @@ const { title, description } = Astro.props;
 			<!-- your content is injected here -->
 		</article>
 		<Footer />
+		<style></style>
+		<style>
+			header {
+				margin: 0em 0 2em;
+				background-color: gray;
+			}
+
+			body {
+				background-color: lightslategray;
+			}
+			nav {
+				margin-right: 5px;
+				padding: 5px;
+			}
+		</style>
 	</body>
 </html>
