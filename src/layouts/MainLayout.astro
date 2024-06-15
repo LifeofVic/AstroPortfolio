@@ -14,33 +14,46 @@ const { title, description } = Astro.props;
 		<Nav />
 	</head>
 	<body>
-		<h1>My Name is Victor and I am a Software Engineer.</h1>
-		<article>
-			<slot />
-			<!-- your content is injected here -->
-		</article>
-		<Footer />
-		<style></style>
-		<style>
-			header {
-				margin: 0em 0 2em;
-				background-color: gray;
-			}
-			h1 {
-				color: black;
-				font-size: 34pt;
-				padding-left: 25vh;
-				padding-right: 25vh;
-				text-align: center;
-			}
+		<div id='intro_message'>
+			<grid>
+				<h2>Hi, my name is</h2>
+				<h1 id='name'>Victor Llapa</h1>
+				<h1>and I am a Software Engineer.</h1>
+			</grid>
 
-			body {
-				background-color: lightslategray;
-			}
-			nav {
-				margin-right: 5px;
-				padding: 5px;
-			}
-		</style>
+			<article>
+				<slot />
+				<!-- your content is injected here -->
+			</article>
+			<Footer />
+			<style></style>
+			<style>
+				header {
+					margin: 0em 0 2em;
+					background-color: gray;
+				}
+				h1 {
+					color: black;
+					font-size: 34pt;
+					padding-right: 25vh;
+					text-align: center;
+				}
+				h2 {
+					color: black;
+					font-size: 20pt;
+					padding-right: 25vh;
+					text-align: center;
+				}
+				#name {
+					color: dimgrey;
+				}
+				body {
+					background-color: lightslategray;
+				}
+				#intro_message {
+					border: solid;
+				}
+			</style>
+		</div>
 	</body>
 </html>

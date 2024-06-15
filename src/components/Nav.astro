@@ -4,18 +4,35 @@ import { SITE_TITLE } from "../config";
 ---
 
 <header>
-	<h1>
-		{SITE_TITLE}
-	</h1>
-	<nav>
-		<HeaderLink href='/'>Home</HeaderLink>
-		<!-- <HeaderLink href='/experience'>Experience</HeaderLink> -->
-		<HeaderLink href='https://github.com/LifeofVic' target='_blank'>
-			GitHub
-		</HeaderLink>
-		<HeaderLink href='https://www.linkedin.com/in/victorllapa/' target='_blank'>
-			LinkedIn
-		</HeaderLink>
-	</nav>
+	<table>
+		<ul>
+			<li><HeaderLink href='/'>Home</HeaderLink></li>
+			<!-- <HeaderLink href='/experience'>Experience</HeaderLink> -->
+			<li>
+				<HeaderLink href='https://github.com/LifeofVic' target='_blank'>
+					GitHub
+				</HeaderLink>
+			</li>
+			<li>
+				<HeaderLink
+					href='https://www.linkedin.com/in/victorllapa/'
+					target='_blank'>
+					LinkedIn
+				</HeaderLink>
+			</li>
+		</ul>
+	</table>
 </header>
-<style></style>
+<style>
+	table {
+		margin: 10pt;
+	}
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline;
+	}
+</style>
