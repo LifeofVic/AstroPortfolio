@@ -7,14 +7,17 @@ import Hero from "../components/Hero.astro";
 ---
 
 <MainLayout title='Portfolio' description='Test Test'>
-	<div class='wrapper stack gap-8 lg:gap-20'>
-		<header class='hero'>
-			<Hero
-				title='Introduction'
-				tagline='I am Full Stack Developer who currently lives in Minneapolis, MN. I am eager to start showcasing my skill sets to solve real world problems.'
-				align='start'
-			/>
-		</header>
+	<div class='hero'>
+		<Hero
+			title='Introduction'
+			tagline='I Full Stack Developer who currently lives in Minneapolis, MN. I am eager to start showcasing my skill sets to solve real world problems.'
+			align='start'
+		/>
+	</div>
+
+	<div class='button container'>
+		<button> Resume</button>
+		<button> Projects</button>
 	</div>
 </MainLayout>
 
@@ -23,39 +26,51 @@ import Hero from "../components/Hero.astro";
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		gap: 2rem;
+		padding: 10px;
+		border-width: 20pt;
+		font-size: 18pt;
 	}
 
 	.roles {
 		display: none;
 	}
 
-	.hero img {
+	button {
+		text-align: center;
+		background-color: darkblue;
+		color: yellowgreen;
+		margin: 10px auto;
+		border-radius: 20px;
+		display: flex;
+		font-size: 18pt;
+		padding: 8px;
+	}
+
+	/* .hero img {
 		aspect-ratio: 5 / 4;
 		object-fit: cover;
 		object-position: top;
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
-	}
+	} */
 
-	@media (min-width: 50em) {
+	/* @media (min-width: 50em) {
 		.hero {
 			display: grid;
 			grid-template-columns: 6fr 4fr;
 			padding-inline: 2.5rem;
 			gap: 3.75rem;
-		}
+		} */
 
-		.roles {
-			margin-top: 0.5rem;
-			display: flex;
-			gap: 0.5rem;
-		}
+	.roles {
+		margin-top: 0.5rem;
+		display: flex;
+		gap: 0.5rem;
+	}
 
-		.hero img {
-			aspect-ratio: 3 / 4;
-			border-radius: 4.5rem;
-			object-fit: cover;
-		}
+	.hero img {
+		aspect-ratio: 3 / 4;
+		border-radius: 4.5rem;
+		object-fit: cover;
 	}
 </style>
