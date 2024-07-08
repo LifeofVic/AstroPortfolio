@@ -15,7 +15,7 @@ import Hero from "../components/Hero.astro";
 		/>
 	</div>
 
-	<div class='button container'>
+	<div class='button_container'>
 		<button> Resume</button>
 		<button> Projects</button>
 	</div>
@@ -39,9 +39,8 @@ import Hero from "../components/Hero.astro";
 		text-align: center;
 		background-color: darkblue;
 		color: yellowgreen;
-		margin: 10px auto;
+		margin: auto;
 		border-radius: 20px;
-		display: flex;
 		font-size: 18pt;
 		padding: 8px;
 	}
@@ -52,8 +51,13 @@ import Hero from "../components/Hero.astro";
 	}
 
 	.hero img {
-		aspect-ratio: 3 / 4;
 		border-radius: 4.5rem;
 		object-fit: cover;
+	}
+
+	.button_container {
+		align-content: baseline;
+		flex-direction: row;
+		display: flex;
 	}
 </style>
