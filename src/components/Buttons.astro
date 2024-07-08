@@ -1,0 +1,44 @@
+<div class='button_container'>
+	<a href='public/Victor_Llapa_Resume.pdf' download='VICTOR_LLAPA_RESUME'>
+		<button id='resume'> Resume</button>
+	</a>
+	<button id='project'> Projects</button>
+
+	<script>
+		//Start of the Resume button
+		//Button that will download a pdf file of the current updated resume
+		function handleResumeClick() {
+			console.log("Resume button was clicked");
+		}
+		document
+			.getElementById("resume")
+			.addEventListener("click", handleResumeClick);
+		//End of Resume button functionality.
+
+		//Start of the Project Button Link
+		function handleProjectClick() {
+			console.log("Project button was clicked");
+		}
+		document
+			.getElementById("project")
+			.addEventListener("click", handleProjectClick);
+		//End of Resume button functionality.
+	</script>
+
+	<style>
+		button {
+			text-align: center;
+			background-color: darkblue;
+			color: yellowgreen;
+			margin: auto;
+			border-radius: 20px;
+			font-size: 18pt;
+			padding: 8px;
+		}
+
+		.button_container {
+			flex-direction: row;
+			display: flex;
+		}
+	</style>
+</div>

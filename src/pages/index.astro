@@ -4,6 +4,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 //Components Imports
 import Hero from "../components/Hero.astro";
+import Buttons from "../components/Buttons.astro";
 ---
 
 <MainLayout title='Portfolio' description='Test Test'>
@@ -15,49 +16,46 @@ import Hero from "../components/Hero.astro";
 		/>
 	</div>
 
-	<div class='button_container'>
-		<button> Resume</button>
-		<button> Projects</button>
-	</div>
+	<Buttons />
+
+	<style>
+		.hero {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 10px;
+			border-width: 20pt;
+			font-size: 18pt;
+		}
+
+		.roles {
+			display: none;
+		}
+
+		/* button {
+			text-align: center;
+			background-color: darkblue;
+			color: yellowgreen;
+			margin: auto;
+			border-radius: 20px;
+			font-size: 18pt;
+			padding: 8px;
+		} */
+		.roles {
+			margin-top: 0.5rem;
+			display: flex;
+			gap: 0.5rem;
+		}
+
+		.hero img {
+			border-radius: 4.5rem;
+			object-fit: cover;
+		}
+
+		/* .button_container {
+			align-content: baseline;
+			flex-direction: row;
+			display: flex;
+		} */
+	</style>
 </MainLayout>
-
-<style>
-	.hero {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 10px;
-		border-width: 20pt;
-		font-size: 18pt;
-	}
-
-	.roles {
-		display: none;
-	}
-
-	button {
-		text-align: center;
-		background-color: darkblue;
-		color: yellowgreen;
-		margin: auto;
-		border-radius: 20px;
-		font-size: 18pt;
-		padding: 8px;
-	}
-	.roles {
-		margin-top: 0.5rem;
-		display: flex;
-		gap: 0.5rem;
-	}
-
-	.hero img {
-		border-radius: 4.5rem;
-		object-fit: cover;
-	}
-
-	.button_container {
-		align-content: baseline;
-		flex-direction: row;
-		display: flex;
-	}
-</style>
