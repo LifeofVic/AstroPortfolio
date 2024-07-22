@@ -1,13 +1,14 @@
 ---
 import { projectList } from "../types/index";
 const { title, details } = Astro.props as projectList;
-
 import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
 ---
 
 <section class='project-page'>
 	<h2 class='header-project-page'>{title}</h2>
-	<div>
+	<div id='project-container'>
 		{
 			details.map(item => (
 				<div class='max-w-auto '>
@@ -19,3 +20,11 @@ import "../styles/global.css";
 		}
 	</div>
 </section>
+
+<style>
+	.project-page {
+		border-style: dashed;
+		border-color: red;
+		border-width: 2pt;
+	}
+</style>
