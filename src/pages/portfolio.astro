@@ -19,15 +19,15 @@ import "../styles/global.css";
 		<Header />
 		<main>
 			<section class='project-page'>
-				<h2 class='header-project-page'>{title}</h2>
+				<!-- <h2 class='header-project-page'>{SITE_TITLE}</h2> -->
 				<h1>"THIS IS A TEST!"</h1>
 
 				<div id='project-container'>
 					{
-						details?.map(item => (
+						details?.map(detail => (
 							<div class='max-w-auto '>
-								<h1 class='text-xl'>{item.name}</h1>
-								<p class='font-medium'> {item.description}</p>
+								<h1 class='text-xl'>{detail.name}</h1>
+								<p class='font-medium'> {detail.description}</p>
 							</div>
 						))
 					}

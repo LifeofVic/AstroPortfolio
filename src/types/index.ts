@@ -11,12 +11,12 @@ title: string;
 details: interfaceExperience[];
 }
 
-export interface project {
+export interface projects {
 name: string;
 description: string;
 }
 
 export interface projectList {
 title: string;
-details: project[];
+details: projects[];
 }
